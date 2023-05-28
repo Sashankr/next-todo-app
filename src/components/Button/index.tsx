@@ -6,7 +6,7 @@ const Button = ({ title, type }: ButtonProps) => {
     <button
       className={`px-6 py-2 ${
         type === "primary" ? "bg-amber-300	" : "bg-emerald-500	"
-      } rounded-md`}
+      } rounded-md hover:drop-shadow-xl transition duration-300 ease`}
     >
       {title}
     </button>
