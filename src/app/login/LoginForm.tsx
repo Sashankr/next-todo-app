@@ -1,6 +1,7 @@
 "use client";
 import Button from "@/components/Button";
 import Input from "@/components/Input";
+import Link from "next/link";
 
 export const LoginForm = () => {
   return (
@@ -17,8 +18,9 @@ export const LoginForm = () => {
         name="email"
       />
       <Input type="password" label="Password" name="password" />
-
-      <Button title="Login" type="secondary" />
+      <Link href="/dashboard">
+        <Button title="Login" type="secondary" />
+      </Link>
     </form>
   );
 };
